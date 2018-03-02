@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int num, one, two, three, four, five, six, seven;
+
+    printf("Enter a 7 digit number");
+    scanf("%d", &num);
+
+    one = num / 1000000 % 10;
+    two = num / 100000 %10;
+    three = num / 10000 % 10;
+    four = num / 1000 % 10;
+    five = num / 100 % 10;
+    six = num / 10 % 10;
+    seven = num % 10;
+
+    printf("%d%d%d%d%d%d%d", seven, six, five, four, three, two, one);
+    return 0;
+}
